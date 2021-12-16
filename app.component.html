@@ -1,0 +1,17 @@
+<app-header [sidenav]="sidenav"></app-header>
+<mat-sidenav-container class="h-100">
+  <mat-sidenav #sidenav class="w-15">
+    <mat-list role="list" >
+      <mat-list-item role="listitem" (click)="sidenav.toggle()">
+        <a href="/products"><mat-icon>home</mat-icon>Home</a>
+      </mat-list-item>
+      <mat-list-item role="listitem">Item 2</mat-list-item>
+      <mat-list-item role="listitem">Item 3</mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
